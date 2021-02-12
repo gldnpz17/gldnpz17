@@ -1,0 +1,23 @@
+{
+  "name": "gldnpz17",
+  "version": "1.0.0",
+  "description": "<h2 align=\"center\">Firdaus Bisma S</h2> A passionate amateur software developer. Usually programs in C# and javascript.",
+  "main": "update-profile.js",
+  "dependencies": {
+    "node": "^15.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gldnpz17/gldnpz17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gldnpz17/gldnpz17/issues"
+  },
+  "homepage": "https://github.com/gldnpz17/gldnpz17#readme"
+}

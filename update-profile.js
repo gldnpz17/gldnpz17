@@ -13,7 +13,7 @@ const projects = [{
   },{
     projectName: "gimana.id",
     url: "https://gimana.id",
-    notes: "made in collaboration with **comfyte**"
+    notes: "made in collaboration with comfyte"
   },{
     projectName: "jenkins server",
     url: "https://jenkins.gldnpz.com",

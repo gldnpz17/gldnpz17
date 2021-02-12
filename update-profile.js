@@ -1,7 +1,6 @@
-const { rejects } = require('assert');
 const fs = require('fs');
 const https = require('https');
-const { resolve } = require('path');
+const { performance } = require('perf_hooks');
 
 const projects = [{
     projectName: "personal website",
@@ -10,6 +9,14 @@ const projects = [{
   },{
     projectName: "url shortener",
     url: "https://short.gldnpz.com",
+    notes: ""
+  },{
+    projectName: "gimana.id",
+    url: "https://gimana.gldnpz.com",
+    notes: ""
+  },{
+    projectName: "gimana.id",
+    url: "https://gimana.id",
     notes: ""
   },{
     projectName: "jenkins server",

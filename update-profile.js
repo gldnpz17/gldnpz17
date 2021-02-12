@@ -12,10 +12,6 @@ const projects = [{
     notes: ""
   },{
     projectName: "gimana.id",
-    url: "https://gimana.gldnpz.com",
-    notes: ""
-  },{
-    projectName: "gimana.id",
     url: "https://gimana.id",
     notes: ""
   },{

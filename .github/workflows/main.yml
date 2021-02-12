@@ -21,9 +21,6 @@ jobs:
           node-version: 12.18.1
       - run: npm install
       - run: npm run build --if-present
-      - run: npm test
-        env:
-          CI: true
       
       - name: Update README.md
         run: node update-profile.js

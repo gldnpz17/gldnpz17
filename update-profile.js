@@ -56,14 +56,10 @@ const updateReadmeAsync = () => {
       await Promise.all(projects.map(async (project) => {
         let code = await getProjectStatus(project.url);
         projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | \`${project.notes}\` |\n`;
-        
-        /*https.get(project.url, res => {
-          projectsString += `| ${project.projectName} | ${(res.statusCode === 200) ? onlineBadge : offlineBadge} | \`${project.notes}\` |\n`;
-        });*/
       }));
   
       let dateTime = new Date();
-      projectUpdateStatus = `project statuses were last updated at ${dateTime.toUTCString()}`;
+      projectUpdateStatus = `project statuses were last updated on ${dateTime.toUTCString()}`;
     } catch {
       projectsString = "Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️";
       projectUpdateStatus = "error updating project status"

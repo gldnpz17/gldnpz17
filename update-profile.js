@@ -5,19 +5,23 @@ const { performance } = require('perf_hooks');
 const projects = [{
     projectName: "personal website",
     url: "https://gldnpz.com",
-    notes: ""
+    notes: "",
+    repo: "https://github.com/gldnpz17/gldnpz.com"
   },{
     projectName: "url shortener",
     url: "https://short.gldnpz.com",
-    notes: ""
+    notes: "",
+    repo: "https://github.com/gldnpz17/url-shortener"
   },{
     projectName: "gimana.id",
     url: "https://gimana.id",
-    notes: "made in collaboration with comfyte"
+    notes: "made in collaboration with comfyte",
+    repo: "https://github.com/gldnpz17/gimana.id"
   },{
     projectName: "jenkins server",
     url: "https://jenkins.gldnpz.com",
-    notes: "Jenkins was too heavy for my puny vps. 😥"
+    notes: "Jenkins was too heavy for my puny vps. 😥",
+    repo: null
   }
 ]
 
@@ -54,11 +58,11 @@ const updateReadmeAsync = () => {
     let projectsString = "";
     let projectUpdateStatus = "";
     try {
-      projectsString = `| Project name | Status | Notes |\n` +
-      `| --- | --- | --- |\n`;
+      projectsString = `| Project name | Status | Repository | Notes |\n` +
+      `| --- | --- | --- | --- |\n`;
       await Promise.all(projects.map(async (project) => {
         let code = await getProjectStatus(project.url);
-        projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
+        projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
       }));
   
       let dateTime = new Date();

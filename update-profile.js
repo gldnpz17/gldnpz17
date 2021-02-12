@@ -55,7 +55,7 @@ const updateReadmeAsync = () => {
       `| --- | --- | --- |\n`;
       await Promise.all(projects.map(async (project) => {
         let code = await getProjectStatus(project.url);
-        projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | \`${project.notes}\` |\n`;
+        projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
       }));
   
       let dateTime = new Date();
@@ -71,7 +71,7 @@ const updateReadmeAsync = () => {
     `### 🛠 Projects\n` +
     `${projectsString}\n` +
     `---\n` +
-    `*<p align="center">${(projectUpdateStatus === "") ? "no notes" : projectUpdateStatus}</p>*`;
+    `*<p align="center">${projectUpdateStatus}</p>*`;
     
     updateReadme(readmeContent);
   });

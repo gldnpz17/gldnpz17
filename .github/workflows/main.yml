@@ -2,9 +2,9 @@ name: update README.md
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/30 * * * *'
   push:
-    branches:
+    branches: 
       - main
 
 jobs:

@@ -75,7 +75,7 @@ const updateReadmeAsync = () => {
     `### 🛠 Projects\n` +
     `${projectsString}\n` +
     `---\n` +
-    `*<p align="center">${projectUpdateStatus}</p>*`;
+    `*<p align="center">${(projectUpdateStatus === "") ? "no notes" : projectUpdateStates}</p>*`;
     
     updateReadme(readmeContent);
   });

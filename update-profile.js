@@ -73,7 +73,7 @@ const updateReadmeAsync = () => {
     }
   
     readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
-    `A passionate amateur software developer. Usually programs in C# and javascript.\n` +
+    `A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology.\n` +
     `\n` +
     `### 🛠 Projects\n` +
     `${projectsString}\n` +

@@ -45,43 +45,36 @@ const getProjectStatus = (url) => {
   });
 }
 
-const updateReadmeAsync = () => {
-  fs.readFile('README.md', 'utf-8', async (err, data) => {
-    if (err) {
-      updateReadme("uhoh 🙃\nError updating README.md");
-      return;
-    }
+const main = async () => {
+  // Process README
+  let readmeContent = "";
+
+  let projectsString = "";
+  let projectUpdateStatus = "";
+  try {
+    projectsString = `| Project name | Status | Repository | Notes |\n` +
+    `| --- | --- | --- | --- |\n`;
+    await Promise.all(projects.map(async (project) => {
+      let code = await getProjectStatus(project.url);
+      projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
+    }));
+
+    let dateTime = new Date();
+    projectUpdateStatus = `project statuses were last updated on ${dateTime.toUTCString()}`;
+  } catch {
+    projectsString = "Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️";
+    projectUpdateStatus = "error updating project status"
+  }
+
+  readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
+  `A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology.\n` +
+  `\n` +
+  `### 🛠 Projects\n` +
+  `${projectsString}\n` +
+  `---\n` +
+  `*<p align="center">${projectUpdateStatus}</p>*`;
   
-    // Process readme
-    let readmeContent = "";
-  
-    let projectsString = "";
-    let projectUpdateStatus = "";
-    try {
-      projectsString = `| Project name | Status | Repository | Notes |\n` +
-      `| --- | --- | --- | --- |\n`;
-      await Promise.all(projects.map(async (project) => {
-        let code = await getProjectStatus(project.url);
-        projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
-      }));
-  
-      let dateTime = new Date();
-      projectUpdateStatus = `project statuses were last updated on ${dateTime.toUTCString()}`;
-    } catch {
-      projectsString = "Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️";
-      projectUpdateStatus = "error updating project status"
-    }
-  
-    readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
-    `A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology.\n` +
-    `\n` +
-    `### 🛠 Projects\n` +
-    `${projectsString}\n` +
-    `---\n` +
-    `*<p align="center">${projectUpdateStatus}</p>*`;
-    
-    updateReadme(readmeContent);
-  });
+  updateReadme(readmeContent);
 }
 
-updateReadmeAsync();
+main().then(() => console.log('Execution complete.'));

@@ -30,10 +30,14 @@ const offlineBadge = "![offlineBadge](https://img.shields.io/badge/status-offlin
 
 console.log('README.md update started');
 
-const updateReadme = (content) => {
-  fs.writeFile('README.md', content, err => {
-    console.log('README.md updated.');
-    console.log(content);
+const updateReadme = async (content) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile('README.md', content, err => {
+      console.log('README.md updated.');
+      console.log(content);
+
+      resolve();
+    });
   });
 };
 
@@ -74,7 +78,7 @@ const main = async () => {
   `---\n` +
   `*<p align="center">${projectUpdateStatus}</p>*`;
   
-  updateReadme(readmeContent);
+  await updateReadme(readmeContent);
 }
 
 main().then(() => console.log('Execution complete.'));

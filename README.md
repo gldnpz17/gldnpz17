@@ -10,4 +10,4 @@ A passionate amateur software developer. Usually programs in C# and javascript. 
 | gimana.id | ![onlineBadge](https://img.shields.io/badge/status-online-%234caf50) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte` |
 
 ---
-*<p align="center">project statuses were last updated on Tue, 16 Feb 2021 00:45:24 GMT</p>*
+*<p align="center">project statuses were last updated on Tue, 16 Feb 2021 01:42:47 GMT</p>*

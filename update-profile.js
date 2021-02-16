@@ -28,12 +28,12 @@ const projects = [{
 const onlineBadge = "![onlineBadge](https://img.shields.io/badge/status-online-%234caf50)";
 const offlineBadge = "![offlineBadge](https://img.shields.io/badge/status-offline-e53935)";
 
-console.log('README.md update started');
+console.log('README.md update started.');
 
 const updateReadme = async (content) => {
   return new Promise((resolve, reject) => {
     fs.writeFile('README.md', content, err => {
-      console.log('README.md updated.');
+      console.log('README.md updated. Content:');
       console.log(content);
 
       resolve();
@@ -58,10 +58,16 @@ const main = async () => {
   try {
     projectsString = `| Project name | Status | Repository | Notes |\n` +
     `| --- | --- | --- | --- |\n`;
-    await Promise.all(projects.map(async (project) => {
+    results = [];
+    
+    await Promise.all(projects.map(async (project, index) => {
       let code = await getProjectStatus(project.url);
-      projectsString += `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
+      results[index] = `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
     }));
+    
+    results.map((result) => {
+      projectsString += result;  
+    });
 
     let dateTime = new Date();
     projectUpdateStatus = `project statuses were last updated on ${dateTime.toUTCString()}`;

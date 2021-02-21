@@ -70,7 +70,7 @@ const main = async () => {
     });
 
     let dateTime = new Date();
-    projectUpdateStatus = `project statuses were last updated on ${dateTime.toUTCString()}`;
+    projectUpdateStatus = `project statuses were last updated automatically on ${dateTime.toUTCString()}`;
   } catch {
     projectsString = "Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️";
     projectUpdateStatus = "error updating project status"

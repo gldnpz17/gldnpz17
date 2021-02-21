@@ -10,4 +10,4 @@ A passionate amateur software developer. Usually programs in C# and javascript. 
 | jenkins server | ![offlineBadge](https://img.shields.io/badge/status-offline-e53935) | `no repository` | `Jenkins was too heavy for my puny vps. 😥` |
 
 ---
-*<p align="center">project statuses were last updated on Sun, 21 Feb 2021 09:43:02 GMT</p>*
+*<p align="center">project statuses were last updated on Sun, 21 Feb 2021 10:19:44 GMT</p>*

@@ -3,30 +3,35 @@ const https = require('https');
 const { performance } = require('perf_hooks');
 
 const projects = [{
-    projectName: "personal website",
-    url: "https://gldnpz.com",
-    notes: "",
-    repo: "https://github.com/gldnpz17/gldnpz.com"
+    projectName: 'personal website',
+    url: 'https://gldnpz.com',
+    notes: '',
+    repo: 'https://github.com/gldnpz17/gldnpz.com'
   },{
-    projectName: "url shortener",
-    url: "https://short.gldnpz.com",
-    notes: "",
-    repo: "https://github.com/gldnpz17/url-shortener"
+    projectName: 'url shortener',
+    url: 'https://short.gldnpz.com',
+    notes: '',
+    repo: 'https://github.com/gldnpz17/url-shortener'
   },{
-    projectName: "gimana.id",
-    url: "https://gimana.id",
-    notes: "made in collaboration with comfyte",
-    repo: "https://github.com/gldnpz17/gimana.id"
+    projectName: 'gimana.id',
+    url: 'https://gimana.id',
+    notes: 'made in collaboration with comfyte',
+    repo: 'https://github.com/gldnpz17/gimana.id'
   },{
-    projectName: "jenkins server",
-    url: "https://jenkins.gldnpz.com",
-    notes: "Jenkins was too heavy for my puny vps. 😥",
+    projectName: 'jenkins server',
+    url: 'https://jenkins.gldnpz.com',
+    notes: 'Jenkins was too heavy for my puny vps. 😥',
     repo: null
   }
 ]
 
-const onlineBadge = "![onlineBadge](https://img.shields.io/badge/status-online-%234caf50)";
-const offlineBadge = "![offlineBadge](https://img.shields.io/badge/status-offline-e53935)";
+const getBadge = (statusCode, isOnline) => {
+  if (isOnline) {
+    return '![onlineBadge](https://img.shields.io/badge/200-online-%234caf50)';
+  } else {
+    return `![offlineBadge](https://img.shields.io/badge/${statusCode}-offline-e53935)`;
+  }
+}
 
 console.log('README.md update started.');
 
@@ -62,7 +67,7 @@ const main = async () => {
     
     await Promise.all(projects.map(async (project, index) => {
       let code = await getProjectStatus(project.url);
-      results[index] = `| ${project.projectName} | ${(code === 200) ? onlineBadge : offlineBadge} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
+      results[index] = `| ${project.projectName} | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
     }));
     
     results.map((result) => {

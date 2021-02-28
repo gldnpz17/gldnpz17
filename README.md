@@ -4,10 +4,10 @@ A passionate amateur software developer. Usually programs in C# and javascript. 
 ### 🛠 Projects
 | Project name | Status | Repository | Notes |
 | --- | --- | --- | --- |
-| personal website | ![offlineBadge](https://img.shields.io/badge/status-offline-e53935) | [here](https://github.com/gldnpz17/gldnpz.com) | `no notes` |
-| url shortener | ![offlineBadge](https://img.shields.io/badge/status-offline-e53935) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
-| gimana.id | ![offlineBadge](https://img.shields.io/badge/status-offline-e53935) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte` |
-| jenkins server | ![offlineBadge](https://img.shields.io/badge/status-offline-e53935) | `no repository` | `Jenkins was too heavy for my puny vps. 😥` |
+| personal website | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/gldnpz.com) | `no notes` |
+| url shortener | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
+| gimana.id | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte` |
+| jenkins server | ![offlineBadge](https://img.shields.io/badge/503-offline-e53935) | `no repository` | `Jenkins was too heavy for my puny vps. 😥` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Sun, 28 Feb 2021 17:51:51 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Sun, 28 Feb 2021 18:04:21 GMT</p>*

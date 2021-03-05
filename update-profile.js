@@ -1,6 +1,5 @@
 const fs = require('fs');
 const https = require('https');
-const { performance } = require('perf_hooks');
 
 const projects = [{
     projectName: 'personal website',

@@ -1,5 +1,5 @@
 <h2 align="center">Firdaus Bisma S</h2>
-A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology.
+A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology.Recently started learning frontend web development.
 
 ### 🛠 Projects
 | Project name | Status | Repository | Notes |
@@ -10,4 +10,4 @@ A passionate amateur software developer. Usually programs in C# and javascript. 
 | bacod-bot | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/bacod-bot) | `no notes` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Mon, 22 Mar 2021 13:00:32 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Mon, 22 Mar 2021 13:22:59 GMT</p>*

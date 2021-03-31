@@ -17,10 +17,10 @@ const projects = [{
     notes: 'made in collaboration with comfyte',
     repo: 'https://github.com/gldnpz17/gimana.id'
   },{
-    projectName: 'bacod-bot',
-    url: 'https://bacod-bot.herokuapp.com/status',
+    projectName: 'ga-bot',
+    url: 'https://gabot.gldnpz.com/status',
     notes: '',
-    repo: 'https://github.com/gldnpz17/bacod-bot'
+    repo: 'https://github.com/gldnpz17/ga-bot'
   }
 ]
 

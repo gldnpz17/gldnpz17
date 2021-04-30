@@ -1,27 +1,24 @@
 const fs = require('fs');
 const https = require('https');
-const { performance } = require('perf_hooks');
 
 const projects = [{
+    name: 'personal-website',
     projectName: 'personal website',
     url: 'https://gldnpz.com',
     notes: '',
     repo: 'https://github.com/gldnpz17/gldnpz.com'
   },{
+    name: 'url-shortener',
     projectName: 'url shortener',
     url: 'https://short.gldnpz.com',
     notes: '',
     repo: 'https://github.com/gldnpz17/url-shortener'
   },{
+    name: 'gimana-id',
     projectName: 'gimana.id',
     url: 'https://gimana.id',
     notes: 'made in collaboration with comfyte',
     repo: 'https://github.com/gldnpz17/gimana.id'
-  },{
-    projectName: 'jenkins server',
-    url: 'https://jenkins.gldnpz.com',
-    notes: 'Jenkins was too heavy for my puny vps. 😥',
-    repo: null
   }
 ]
 
@@ -46,11 +43,37 @@ const updateReadme = async (content) => {
   });
 };
 
-const getProjectStatus = (url) => {
+const getWebsiteStatus = (url) => {
   return new Promise((resolve, reject) => {
     https.get(url, res => {
       resolve(res.statusCode);
     });
+  });
+}
+
+// TO-DO : continue work here!
+const getProjectStatus = (project) => {
+  let projectStatusData = {
+    lastUpdateDateTime : null,
+    totalUptimeMinutes: 0,
+    lastIncidentDateTime: null,
+    totalIncidents: 0
+  }
+
+
+  // Load project data
+  fs.readFile(`./status-data/${project}`)
+
+  // Save project data.
+  fs.writeFile()
+
+  // Return status.
+  return ({
+    statusCode : '',
+    latency: '',
+    uptime: '',
+    lastIncidentDateTime: '',
+
   });
 }
 
@@ -66,7 +89,7 @@ const main = async () => {
     results = [];
     
     await Promise.all(projects.map(async (project, index) => {
-      let code = await getProjectStatus(project.url);
+      let code = await getWebsiteStatus(project.url);
       results[index] = `| ${project.projectName} | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
     }));
     

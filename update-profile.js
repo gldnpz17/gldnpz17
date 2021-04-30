@@ -122,4 +122,7 @@ const main = async () => {
   await updateReadme(readmeContent);
 }
 
-main().then(() => console.log('Execution complete.'));
+main().then(() => {
+  console.log('Execution complete.');
+  process.exit(0);
+});

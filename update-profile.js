@@ -17,7 +17,7 @@ const projects = [{
     name: 'gimana-id',
     projectName: 'gimana.id',
     url: 'https://gimana.id',
-    notes: 'made in collaboration with comfyte',
+    notes: 'made in collaboration with comfyte.\ntaken down due to low server resource.',
     repo: 'https://github.com/gldnpz17/gimana.id'
   },{
     projectName: 'ga-bot',

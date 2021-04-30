@@ -2,12 +2,6 @@
 A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning frontend web development.
 
 ### 🛠 Projects
-| Project name | Status | Repository | Notes |
-| --- | --- | --- | --- |
-| personal website | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/gldnpz.com) | `no notes` |
-| url shortener | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
-| gimana.id | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte` |
-| ga-bot | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
-
+Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️
 ---
-*<p align="center">project statuses were last updated automatically on Fri, 30 Apr 2021 13:27:43 GMT</p>*
+*<p align="center">error updating project status</p>*

@@ -19,6 +19,11 @@ const projects = [{
     url: 'https://gimana.id',
     notes: 'made in collaboration with comfyte',
     repo: 'https://github.com/gldnpz17/gimana.id'
+  },{
+    projectName: 'ga-bot',
+    url: 'https://gabot.gldnpz.com/status',
+    notes: '',
+    repo: 'https://github.com/gldnpz17/ga-bot'
   }
 ]
 
@@ -105,7 +110,7 @@ const main = async () => {
   }
 
   readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
-  `A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology.\n` +
+  `A passionate amateur software developer. Usually programs in C# and javascript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning frontend web development.\n` +
   `\n` +
   `### 🛠 Projects\n` +
   `${projectsString}\n` +

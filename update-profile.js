@@ -54,7 +54,7 @@ const getWebsiteStatus = (url) => {
       resolve(res.statusCode);
     });
 
-    Request.setTimeout(10000, () => {
+    request.setTimeout(10000, () => {
       resolve('Timeout')
     });
   });

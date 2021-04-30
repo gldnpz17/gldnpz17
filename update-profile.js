@@ -50,8 +50,12 @@ const updateReadme = async (content) => {
 
 const getWebsiteStatus = (url) => {
   return new Promise((resolve, reject) => {
-    https.get(url, res => {
+    let request = https.get(url, res => {
       resolve(res.statusCode);
+    });
+
+    Request.setTimeout(10000, () => {
+      resolve('Timeout')
     });
   });
 }
@@ -65,7 +69,6 @@ const getProjectStatus = (project) => {
     totalIncidents: 0
   }
 
-
   // Load project data
   fs.readFile(`./status-data/${project}`)
 
@@ -77,8 +80,7 @@ const getProjectStatus = (project) => {
     statusCode : '',
     latency: '',
     uptime: '',
-    lastIncidentDateTime: '',
-
+    lastIncidentDateTime: ''
   });
 }
 

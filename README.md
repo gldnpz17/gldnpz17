@@ -5,9 +5,9 @@ A passionate amateur software developer. Usually programs in C# and javascript. 
 | Project name | Status | Repository | Notes |
 | --- | --- | --- | --- |
 | personal website | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/gldnpz.com) | `no notes` |
-| url shortener | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
+| url shortener | ![offlineBadge](https://img.shields.io/badge/timeout-offline-e53935) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
 | gimana.id | ![offlineBadge](https://img.shields.io/badge/503-offline-e53935) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte. taken down due to low server resource.` |
-| ga-bot | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
+| ga-bot | ![offlineBadge](https://img.shields.io/badge/timeout-offline-e53935) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Sat, 29 May 2021 06:54:09 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Sat, 29 May 2021 09:28:47 GMT</p>*

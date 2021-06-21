@@ -4,10 +4,10 @@ A passionate amateur software developer. Usually programs in C# and javascript. 
 ### 🛠 Projects
 | Project name | Status | Repository | Notes |
 | --- | --- | --- | --- |
-| personal website | ![offlineBadge](https://img.shields.io/badge/503-offline-e53935) | [here](https://github.com/gldnpz17/gldnpz.com) | `no notes` |
+| personal website | ![offlineBadge](https://img.shields.io/badge/503-offline-e53935) | [here](https://github.com/gldnpz17/gldnpz.com) | `it looks ugly. reconstruction work in progress.` |
 | url shortener | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
 | gimana.id | ![offlineBadge](https://img.shields.io/badge/503-offline-e53935) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte. taken down due to low server resource.` |
 | ga-bot | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Mon, 21 Jun 2021 23:42:36 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Mon, 21 Jun 2021 23:57:33 GMT</p>*

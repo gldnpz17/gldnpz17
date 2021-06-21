@@ -5,7 +5,7 @@ const projects = [{
     name: 'personal-website',
     projectName: 'personal website',
     url: 'https://gldnpz.com',
-    notes: '',
+    notes: 'it looks ugly. reconstruction work in progress.',
     repo: 'https://github.com/gldnpz17/gldnpz.com'
   },{
     name: 'url-shortener',

@@ -1,9 +1,6 @@
 <h2 align="center">Firdaus Bisma S</h2>
 A passionate amateur software developer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning frontend web development.
 
-
-![dotnetcs](https://img.shields.io/badge/-C%23%2F.NET-%23455a64?logo=dotnet) ![dotnetcs](https://img.shields.io/badge/-C%23%2F.NET-%23455a64?logo=dotnet)
-
 ### 🛠 Projects
 | Project name | Status | Repository | Notes |
 | --- | --- | --- | --- |
@@ -14,4 +11,4 @@ A passionate amateur software developer. Usually programs in C#, javascript and 
 | regex-catalog | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/regex-catalog) | `no notes` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Thu, 26 Aug 2021 08:41:48 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Thu, 26 Aug 2021 08:52:27 GMT</p>*

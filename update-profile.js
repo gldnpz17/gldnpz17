@@ -117,8 +117,8 @@ const main = async () => {
   }
 
   readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
-  `A passionate amateur software developer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning frontend web development. </br>\n` +
-  `</br>\n` +
+  `A passionate amateur software developer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning frontend web development. \n` +
+  `</br> <\br>\n\n` +
   `[dotnet-csharp](https://img.shields.io/badge/C%23%2F.NET-%23546e7a?logo=dotnet&style=flat&labelColor=37474f&logoColor=white) ` +
   `[javascript](https://img.shields.io/badge/JavaScript-%23546e7a?logo=javascript&style=flat&labelColor=37474f&logoColor=white) ` +
   `[expressjs](https://img.shields.io/badge/Express-%23546e7a?logo=express&style=flat&labelColor=37474f&logoColor=white) ` +
@@ -128,7 +128,8 @@ const main = async () => {
   `[graphql](https://img.shields.io/badge/GraphQL-%23546e7a?logo=graphql&style=flat&labelColor=37474f&logoColor=white) ` +
   `[reactjs](https://img.shields.io/badge/React-%23546e7a?logo=react&style=flat&labelColor=37474f&logoColor=white) ` +
   `[mongodb](https://img.shields.io/badge/MongoDB-%23546e7a?logo=mongodb&style=flat&labelColor=37474f&logoColor=white) ` +
-  `[postgresql](https://img.shields.io/badge/PostgreSQL-%23546e7a?logo=postgresql&style=flat&labelColor=37474f&logoColor=white) ` +
+  `[postgresql](https://img.shields.io/badge/PostgreSQL-%23546e7a?logo=postgresql&style=flat&labelColor=37474f&logoColor=white)` +
+  `\n\n` +
   `### 🛠 Projects\n` +
   `${projectsString}\n` +
   `---\n` +

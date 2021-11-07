@@ -117,7 +117,7 @@ const main = async () => {
   }
 
   readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
-  `A passionate amateur software developer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning frontend web development. \n` +
+  `A passionate amateur software engineer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning native android development. \n` +
   `</br> </br>\n\n` +
   `![dotnet-csharp](https://img.shields.io/badge/C%23%2F.NET-%23546e7a?logo=dotnet&style=flat&labelColor=37474f&logoColor=white) ` +
   `![javascript](https://img.shields.io/badge/JavaScript-%23546e7a?logo=javascript&style=flat&labelColor=37474f&logoColor=white) ` +

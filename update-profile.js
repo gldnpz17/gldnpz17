@@ -59,7 +59,7 @@ const getWebsiteStatus = (url) => {
   return new Promise((resolve, reject) => {
     let request = https.get(url, res => {
       resolve(res.statusCode);
-    }).on('error', (e) => {
+    }).on('error', (err) => {
       reject(err)
     });
 

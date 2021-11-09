@@ -35,6 +35,8 @@ const projects = [{
 const getBadge = (statusCode, isOnline) => {
   if (isOnline) {
     return '![onlineBadge](https://img.shields.io/badge/200-online-%234caf50)';
+  } else if ('?') {
+    return `![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935)`;
   } else {
     return `![offlineBadge](https://img.shields.io/badge/${statusCode}-offline-e53935)`;
   }
@@ -101,7 +103,13 @@ const main = async () => {
     results = [];
     
     await Promise.all(projects.map(async (project, index) => {
-      let code = await getWebsiteStatus(project.url);
+      let code = null
+      try {
+        code = await getWebsiteStatus(project.url);
+      } catch(err) {
+        code = '?'
+      }
+
       results[index] = `| ${project.projectName} | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
     }));
     

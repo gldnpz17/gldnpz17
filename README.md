@@ -1,5 +1,5 @@
 <h2 align="center">Firdaus Bisma S</h2>
-A passionate amateur software engineer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning native android development. 
+A passionate amateur software engineer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning native android development with kotlin. 
 </br> </br>
 
 ![dotnet-csharp](https://img.shields.io/badge/C%23%2F.NET-%23546e7a?logo=dotnet&style=flat&labelColor=37474f&logoColor=white) ![javascript](https://img.shields.io/badge/JavaScript-%23546e7a?logo=javascript&style=flat&labelColor=37474f&logoColor=white) ![expressjs](https://img.shields.io/badge/Express-%23546e7a?logo=express&style=flat&labelColor=37474f&logoColor=white) ![typescript](https://img.shields.io/badge/TypeScript-%23546e7a?logo=typescript&style=flat&labelColor=37474f&logoColor=white) ![nestjs](https://img.shields.io/badge/NestJS-%23546e7a?logo=nestjs&style=flat&labelColor=37474f&logoColor=white) ![docker](https://img.shields.io/badge/Docker-%23546e7a?logo=docker&style=flat&labelColor=37474f&logoColor=white) ![graphql](https://img.shields.io/badge/GraphQL-%23546e7a?logo=graphql&style=flat&labelColor=37474f&logoColor=white) ![reactjs](https://img.shields.io/badge/React-%23546e7a?logo=react&style=flat&labelColor=37474f&logoColor=white) ![mongodb](https://img.shields.io/badge/MongoDB-%23546e7a?logo=mongodb&style=flat&labelColor=37474f&logoColor=white) ![postgresql](https://img.shields.io/badge/PostgreSQL-%23546e7a?logo=postgresql&style=flat&labelColor=37474f&logoColor=white) 
@@ -15,4 +15,4 @@ A passionate amateur software engineer. Usually programs in C#, javascript and t
 | [beringtoyou.com](https://beringtoyou.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Thu, 11 Nov 2021 05:51:28 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Thu, 11 Nov 2021 05:52:29 GMT</p>*

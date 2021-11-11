@@ -33,7 +33,7 @@ const projects = [{
     projectName: 'BeringToYou',
     url: 'https://beringtoyou.com',
     notes: 'PKM(Program Kreativitas Mahasiswa) project',
-    repo: 'private repo'
+    repo: null
   }
 ]
 
@@ -117,7 +117,7 @@ const main = async () => {
         code = '?'
       }
 
-      results[index] = `| ${project.projectName} | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`no repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
+      results[index] = `| ${project.projectName} | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`private repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
     }));
     
     results.map((result) => {

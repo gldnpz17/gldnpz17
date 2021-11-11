@@ -164,7 +164,7 @@ const main = async () => {
   `![redux](https://img.shields.io/badge/Redux-%23546e7a?logo=redux&style=flat&labelColor=37474f&logoColor=white) ` +
   `![nextjs](https://img.shields.io/badge/Next.js-%23546e7a?logo=nextdotjs&style=flat&labelColor=37474f&logoColor=white) ` +
   `![kubernetes](https://img.shields.io/badge/Kubernetes-%23546e7a?logo=kubernetes&style=flat&labelColor=37474f&logoColor=white) ` +
-  `\n\n`
+  `\n\n` +
   `### 🛠 Projects\n` +
   `${projectsString}\n` +
   `---\n` +

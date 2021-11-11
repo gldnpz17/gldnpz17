@@ -29,6 +29,11 @@ const projects = [{
     url: 'https://regex.gldnpz.com',
     notes: '',
     repo: 'https://github.com/gldnpz17/regex-catalog'
+  },{
+    projectName: 'BeringToYou',
+    url: 'https://beringtoyou.com',
+    notes: 'PKM(Program Kreativitas Mahasiswa) project',
+    repo: 'private repo'
   }
 ]
 

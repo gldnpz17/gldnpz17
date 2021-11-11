@@ -134,7 +134,7 @@ const main = async () => {
   readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
   `A passionate amateur software engineer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning native android development using kotlin. \n` +
   `</br> </br>\n\n` +
-  `*Technologies i've worked with:*` +
+  `**Technologies i've worked with:**` +
   `\n\n` +
   `![dotnet-csharp](https://img.shields.io/badge/C%23%2F.NET-%23546e7a?logo=dotnet&style=flat&labelColor=37474f&logoColor=white) ` +
   `![typescript](https://img.shields.io/badge/TypeScript-%23546e7a?logo=typescript&style=flat&labelColor=37474f&logoColor=white) ` +
@@ -152,7 +152,7 @@ const main = async () => {
   `![mongodb](https://img.shields.io/badge/MongoDB-%23546e7a?logo=mongodb&style=flat&labelColor=37474f&logoColor=white) ` +
   `![postgresql](https://img.shields.io/badge/PostgreSQL-%23546e7a?logo=postgresql&style=flat&labelColor=37474f&logoColor=white) ` +
   `\n\n` +
-  `*Technologies i'm currently learning:*` +
+  `**Technologies i'm currently learning:**` +
   `\n\n` +
   `![kotlin](https://img.shields.io/badge/Kotlin-%23546e7a?logo=kotlin&style=flat&labelColor=37474f&logoColor=white) ` +
   `![native-android-development](https://img.shields.io/badge/Native%20Android%20Development-%23546e7a?logo=androidstudio&style=flat&labelColor=37474f&logoColor=white) ` +
@@ -161,7 +161,7 @@ const main = async () => {
   `![firebase](https://img.shields.io/badge/Firebase-%23546e7a?logo=firebase&style=flat&labelColor=37474f&logoColor=white) ` +
   `![nuxtjs](https://img.shields.io/badge/Nuxt.js-%23546e7a?logo=nuxtdotjs&style=flat&labelColor=37474f&logoColor=white) ` +
   `\n\n` +
-  `*Technologies i'm interested in learning in the future:*` +
+  `**Technologies i'm interested in learning in the future:**` +
   `\n\n` +
   `![redux](https://img.shields.io/badge/Redux-%23546e7a?logo=redux&style=flat&labelColor=37474f&logoColor=white) ` +
   `![nextjs](https://img.shields.io/badge/Next.js-%23546e7a?logo=nextdotjs&style=flat&labelColor=37474f&logoColor=white) ` +

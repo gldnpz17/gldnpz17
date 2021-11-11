@@ -5,7 +5,7 @@ const projects = [{
     name: 'personal-website',
     projectName: 'personal website',
     url: 'https://gldnpz.com',
-    notes: 'it looks ugly. reconstruction work in progress.',
+    notes: 'It looks ugly. reconstruction work in progress.',
     repo: 'https://github.com/gldnpz17/gldnpz.com'
   },{
     name: 'url-shortener',
@@ -17,7 +17,7 @@ const projects = [{
     name: 'gimana-id',
     projectName: 'gimana.id',
     url: 'https://gimana.id',
-    notes: 'made in collaboration with comfyte. taken down due to low server resource.',
+    notes: 'Made in collaboration with comfyte. taken down due to low server resource.',
     repo: 'https://github.com/gldnpz17/gimana.id'
   },{
     projectName: 'ga-bot',
@@ -32,7 +32,7 @@ const projects = [{
   },{
     projectName: 'beringtoyou.com',
     url: 'https://beringtoyou.com',
-    notes: 'PKM(Program Kreativitas Mahasiswa) project',
+    notes: 'PKM(Program Kreativitas Mahasiswa) project. Built with React and ASP.NET Core.',
     repo: null
   }
 ]

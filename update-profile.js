@@ -14,29 +14,29 @@ const technologies = {
     languages: [
       {
         label: 'C#/.NET',
-        iconId: ''
+        iconId: 'dotnet'
       },
       {
         label: 'JavaScript',
-        iconId: ''
+        iconId: 'javascript'
       },
       {
         label: 'TypeScript',
-        iconId: ''
+        iconId: 'typescript'
       }
     ],
     frameworks: [
       {
         label: 'NestJS',
-        iconId: ''
+        iconId: 'nestjs'
       },
       {
         label: 'Express',
-        iconId: ''
+        iconId: 'express'
       },
       {
         label: 'React',
-        iconId: ''
+        iconId: 'react'
       },
       {
         label: 'ASP.NET Core',
@@ -48,94 +48,94 @@ const technologies = {
       },
       {
         label: 'Boostrap',
-        iconId: ''
+        iconId: 'bootstrap'
       },
       {
         label: 'MaterialUI',
-        iconId: ''
+        iconId: 'materialui'
       },
     ],
     tools: [
       {
         label: 'Docker',
-        iconId: ''
+        iconId: 'docker'
       },
       {
         label: 'GraphQL',
-        iconId: ''
+        iconId: 'graphql'
       },
       {
         label: 'Redis',
-        iconId: ''
+        iconId: 'redis'
       },
       {
         label: 'MongoDB',
-        iconId: ''
+        iconId: 'mongodb'
       },
       {
         label: 'PostgreSQL',
-        iconId: ''
+        iconId: 'postgresql'
       },
     ]
   },
   learning: [
     {
       label: 'Kotlin',
-      iconId: ''
+      iconId: 'kotlin'
     },
     {
       label: 'Native Android Development',
-      iconId: ''
+      iconId: 'androidstudio'
     },
     {
       label: 'Apache',
-      iconId: ''
+      iconId: 'apache'
     },
     {
       label: 'TailwindCSS',
-      iconId: ''
+      iconId: 'tailwindcss'
     },
     {
       label: 'Vue',
-      iconId: ''
+      iconId: 'vuedotjs'
     },
     {
       label: 'Nuxt.js',
-      iconId: ''
+      iconId: 'nuxtdotjs'
     },
     {
       label: 'SQLite',
-      iconId: ''
+      iconId: 'sqlite'
     },
     {
       label: 'Firebase',
-      iconId: ''
+      iconId: 'firebase'
     },
   ],
   interested: [
     {
       label: 'Redux',
-      iconId: ''
+      iconId: 'redux'
     },
     {
       label: 'Next.js',
-      iconId: ''
+      iconId: 'nextdotjs'
     },
     {
       label: 'Kubernetes',
-      iconId: ''
+      iconId: 'kubernetes'
     },
     {
       label: 'Jest',
-      iconId: ''
+      iconId: 'jest'
     },
     {
       label: 'Electron',
-      iconId: ''
+      iconId: 'electron'
     },
     {
       label: 'JUnit',
-      iconId: ''
+      iconId: 'junit5'
     },
   ]
 }
@@ -261,6 +261,8 @@ const projectWriter = {
       results = [];
       
       await Promise.all(projects.map(async (project, index) => {
+        console.log(`Fetching status for ${project.url}`)
+
         let code = null
         try {
           code = await getWebsiteStatus(project.url);
@@ -290,30 +292,29 @@ const projectWriter = {
 }
 
 const technologyWriter = {
-  listTechnologies: async (technologies) => {
+  listTechnologies: (technologies) => {
     const technologyStrings = technologies.map(technology => {
-      getTechnologyBadge(technology.label, technology.iconId)
+      return getTechnologyBadge(technology.label, technology.iconId)
     })
+
+    console.log(technologyStrings)
 
     return technologyStrings.join(' ')
   }
 }
 
 const main = async () => {
-  // Process README
-  let readmeContent = "";
-
   let projectStrings = await projectWriter.writeProjects(projects)
 
-  readmeContent = 
+  let readmeContent = 
   `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
   `${summary} \n` +
   `</br> </br>\n\n` +
   `**Technologies i've worked with:**` +
   `\n\n` +
-  `| Languages | Frameworks | Tools/Misc. |` +
-  `| --- | --- | --- |` +
-  `| ${technologyWriter.listTechnologies(technologies.workedWith.languages)} | ${technologyWriter.listTechnologies(technologies.workedWith.frameworks)} | ${technologyWriter.listTechnologies(technologies.workedWith.tools)} |`
+  `| Languages | Frameworks | Tools/Misc. |\n` +
+  `| --- | --- | --- |\n` +
+  `| ${technologyWriter.listTechnologies(technologies.workedWith.languages)} | ${technologyWriter.listTechnologies(technologies.workedWith.frameworks)} | ${technologyWriter.listTechnologies(technologies.workedWith.tools)} |` +
   `\n\n` +
   `**Technologies i'm currently learning:**` +
   `\n\n` +

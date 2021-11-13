@@ -1,6 +1,145 @@
 const fs = require('fs');
 const https = require('https');
 
+console.log('README.md update started.');
+
+const summary = 
+'A passionate amateur software engineer. ' + 
+'Usually programs in C#, JavaScript and TypeScript. ' +
+'Lives by the principle that every project is an opportunity to learn a new piece of technology. ' + 
+'Recently started learning native android development using Kotlin and backend development with Spring using Java.'
+
+const technologies = {
+  workedWith: {
+    languages: [
+      {
+        label: 'C#/.NET',
+        iconId: ''
+      },
+      {
+        label: 'JavaScript',
+        iconId: ''
+      },
+      {
+        label: 'TypeScript',
+        iconId: ''
+      }
+    ],
+    frameworks: [
+      {
+        label: 'NestJS',
+        iconId: ''
+      },
+      {
+        label: 'Express',
+        iconId: ''
+      },
+      {
+        label: 'React',
+        iconId: ''
+      },
+      {
+        label: 'ASP.NET Core',
+        iconId: null
+      },
+      {
+        label: 'NUnit',
+        iconId: null
+      },
+      {
+        label: 'Boostrap',
+        iconId: ''
+      },
+      {
+        label: 'MaterialUI',
+        iconId: ''
+      },
+    ],
+    tools: [
+      {
+        label: 'Docker',
+        iconId: ''
+      },
+      {
+        label: 'GraphQL',
+        iconId: ''
+      },
+      {
+        label: 'Redis',
+        iconId: ''
+      },
+      {
+        label: 'MongoDB',
+        iconId: ''
+      },
+      {
+        label: 'PostgreSQL',
+        iconId: ''
+      },
+    ]
+  },
+  learning: [
+    {
+      label: 'Kotlin',
+      iconId: ''
+    },
+    {
+      label: 'Native Android Development',
+      iconId: ''
+    },
+    {
+      label: 'Apache',
+      iconId: ''
+    },
+    {
+      label: 'TailwindCSS',
+      iconId: ''
+    },
+    {
+      label: 'Vue',
+      iconId: ''
+    },
+    {
+      label: 'Nuxt.js',
+      iconId: ''
+    },
+    {
+      label: 'SQLite',
+      iconId: ''
+    },
+    {
+      label: 'Firebase',
+      iconId: ''
+    },
+  ],
+  interested: [
+    {
+      label: 'Redux',
+      iconId: ''
+    },
+    {
+      label: 'Next.js',
+      iconId: ''
+    },
+    {
+      label: 'Kubernetes',
+      iconId: ''
+    },
+    {
+      label: 'Jest',
+      iconId: ''
+    },
+    {
+      label: 'Electron',
+      iconId: ''
+    },
+    {
+      label: 'JUnit',
+      iconId: ''
+    },
+  ]
+}
+
 const projects = [{
     name: 'personal-website',
     projectName: 'personal website',
@@ -37,6 +176,20 @@ const projects = [{
   }
 ]
 
+const getTechnologyBadge = (label, iconId) => {
+  let params = new URLSearchParams('')
+  
+  params.append('style', 'flat')
+  params.append('labelColor', '37474')
+
+  if (iconId) {
+    params.append('logo', iconId)
+    params.append('logoColor', 'white')
+  }
+
+  return `![${label}](https://img.shields.io/badge/${encodeURIComponent(label)}-%23546e7a?${params.toString()})`
+}
+
 const getBadge = (statusCode, isOnline) => {
   if (isOnline) {
     return '![onlineBadge](https://img.shields.io/badge/200-online-%234caf50)';
@@ -46,8 +199,6 @@ const getBadge = (statusCode, isOnline) => {
     return `![offlineBadge](https://img.shields.io/badge/${statusCode}-offline-e53935)`;
   }
 }
-
-console.log('README.md update started.');
 
 const updateReadme = async (content) => {
   return new Promise((resolve, reject) => {
@@ -98,81 +249,84 @@ const getProjectStatus = (project) => {
   });
 }
 
+const projectWriter = {
+  writeProjects: async () => {
+    let projectsString =      
+    `| Project name | Status | Repository | Notes |\n` +
+    `| --- | --- | --- | --- |\n`;
+    
+    let projectUpdateStatus = '';
+    
+    try {
+      results = [];
+      
+      await Promise.all(projects.map(async (project, index) => {
+        let code = null
+        try {
+          code = await getWebsiteStatus(project.url);
+        } catch(err) {
+          code = '?'
+        }
+
+        results[index] = `| [${project.projectName}](${project.url}) | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`private repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
+      }));
+      
+      results.map(result => {
+        projectsString += result;  
+      });
+
+      let dateTime = new Date();
+      projectUpdateStatus = `project statuses were last updated automatically on ${dateTime.toUTCString()}`;
+    } catch {
+      projectsString = "Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️";
+      projectUpdateStatus = "error updating project status"
+    }
+
+    return ({
+      tableString: projectsString,
+      statusString: projectUpdateStatus
+    })
+  }
+}
+
+const technologyWriter = {
+  listTechnologies: async (technologies) => {
+    const technologyStrings = technologies.map(technology => {
+      getTechnologyBadge(technology.label, technology.iconId)
+    })
+
+    return technologyStrings.join(' ')
+  }
+}
+
 const main = async () => {
   // Process README
   let readmeContent = "";
 
-  let projectsString = "";
-  let projectUpdateStatus = "";
-  try {
-    projectsString = `| Project name | Status | Repository | Notes |\n` +
-    `| --- | --- | --- | --- |\n`;
-    results = [];
-    
-    await Promise.all(projects.map(async (project, index) => {
-      let code = null
-      try {
-        code = await getWebsiteStatus(project.url);
-      } catch(err) {
-        code = '?'
-      }
+  let projectStrings = await projectWriter.writeProjects(projects)
 
-      results[index] = `| [${project.projectName}](${project.url}) | ${(code === 200) ? getBadge(200, true) : getBadge(code, false)} | ${(project.repo === null) ? "`private repository`" : `[here](${project.repo})`} | \`${(project.notes === "") ? "no notes" : project.notes}\` |\n`;
-    }));
-    
-    results.map((result) => {
-      projectsString += result;  
-    });
-
-    let dateTime = new Date();
-    projectUpdateStatus = `project statuses were last updated automatically on ${dateTime.toUTCString()}`;
-  } catch {
-    projectsString = "Welp 😛. Something went wrong updating the project status. A fix should be underway 👷‍♀️";
-    projectUpdateStatus = "error updating project status"
-  }
-
-  readmeContent = `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
-  `A passionate amateur software engineer. Usually programs in C#, javascript and typescript. Lives by the principle that every project is an opportunity to learn a new piece of technology. Recently started learning native android development using kotlin. \n` +
+  readmeContent = 
+  `<h2 align=\"center\">Firdaus Bisma S</h2>\n` + 
+  `${summary} \n` +
   `</br> </br>\n\n` +
   `**Technologies i've worked with:**` +
   `\n\n` +
-  `![dotnet-csharp](https://img.shields.io/badge/C%23%2F.NET-%23546e7a?logo=dotnet&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![typescript](https://img.shields.io/badge/TypeScript-%23546e7a?logo=typescript&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![javascript](https://img.shields.io/badge/JavaScript-%23546e7a?logo=javascript&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![html](https://img.shields.io/badge/HTML-%23546e7a?logo=html5&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![css](https://img.shields.io/badge/CSS-%23546e7a?logo=css3&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![nestjs](https://img.shields.io/badge/NestJS-%23546e7a?logo=nestjs&style=flat&labelColor=37474f&logoColor=white) ` +  
-  `![expressjs](https://img.shields.io/badge/Express-%23546e7a?logo=express&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![reactjs](https://img.shields.io/badge/React-%23546e7a?logo=react&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![bootstrap](https://img.shields.io/badge/Bootstrap-%23546e7a?logo=bootstrap&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![materialui](https://img.shields.io/badge/Material--UI-%23546e7a?logo=materialui&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![docker](https://img.shields.io/badge/Docker-%23546e7a?logo=docker&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![graphql](https://img.shields.io/badge/GraphQL-%23546e7a?logo=graphql&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![redis](https://img.shields.io/badge/Redis-%23546e7a?logo=redis&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![mongodb](https://img.shields.io/badge/MongoDB-%23546e7a?logo=mongodb&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![postgresql](https://img.shields.io/badge/PostgreSQL-%23546e7a?logo=postgresql&style=flat&labelColor=37474f&logoColor=white) ` +
+  `| Languages | Frameworks | Tools/Misc. |` +
+  `| --- | --- | --- |` +
+  `| ${technologyWriter.listTechnologies(technologies.workedWith.languages)} | ${technologyWriter.listTechnologies(technologies.workedWith.frameworks)} | ${technologyWriter.listTechnologies(technologies.workedWith.tools)} |`
   `\n\n` +
   `**Technologies i'm currently learning:**` +
   `\n\n` +
-  `![kotlin](https://img.shields.io/badge/Kotlin-%23546e7a?logo=kotlin&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![native-android-development](https://img.shields.io/badge/Native%20Android%20Development-%23546e7a?logo=androidstudio&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![apache](https://img.shields.io/badge/Apache-%23546e7a?logo=apache&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![tailwind](https://img.shields.io/badge/TailwindCSS-%23546e7a?logo=tailwindcss&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![firebase](https://img.shields.io/badge/Firebase-%23546e7a?logo=firebase&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![nuxtjs](https://img.shields.io/badge/Nuxt.js-%23546e7a?logo=nuxtdotjs&style=flat&labelColor=37474f&logoColor=white) ` +
+  technologyWriter.listTechnologies(technologies.learning) +
   `\n\n` +
   `**Technologies i'm interested in learning in the future:**` +
   `\n\n` +
-  `![redux](https://img.shields.io/badge/Redux-%23546e7a?logo=redux&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![nextjs](https://img.shields.io/badge/Next.js-%23546e7a?logo=nextdotjs&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![kubernetes](https://img.shields.io/badge/Kubernetes-%23546e7a?logo=kubernetes&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![jest](https://img.shields.io/badge/Jest-%23546e7a?logo=jest&style=flat&labelColor=37474f&logoColor=white) ` +
-  `![electron](https://img.shields.io/badge/Electron-%23546e7a?logo=electron&style=flat&labelColor=37474f&logoColor=white) ` +
+  technologyWriter.listTechnologies(technologies.interested) +
   `\n\n` +
   `### 🛠 Projects\n` +
-  `${projectsString}\n` +
+  `${projectStrings.tableString}\n` +
   `---\n` +
-  `*<p align="center">${projectUpdateStatus}</p>*`;
+  `*<p align="center">${projectStrings.statusString}</p>*`;
   
   await updateReadme(readmeContent);
 }

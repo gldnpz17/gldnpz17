@@ -10,7 +10,7 @@ A passionate amateur software engineer. Usually programs in C#, JavaScript and T
 
 **Technologies i'm currently learning:**
 
-![Kotlin](https://img.shields.io/badge/Kotlin-%23546e7a?style=flat&labelColor=37474&logo=kotlin&logoColor=white) ![Native Android Development](https://img.shields.io/badge/Native%20Android%20Development-%23546e7a?style=flat&labelColor=37474&logo=androidstudio&logoColor=white) ![Apache](https://img.shields.io/badge/Apache-%23546e7a?style=flat&labelColor=37474&logo=apache&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%23546e7a?style=flat&labelColor=37474&logo=tailwindcss&logoColor=white) ![Vue](https://img.shields.io/badge/Vue-%23546e7a?style=flat&labelColor=37474&logo=vuedotjs&logoColor=white) ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-%23546e7a?style=flat&labelColor=37474&logo=nuxtdotjs&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-%23546e7a?style=flat&labelColor=37474&logo=sqlite&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-%23546e7a?style=flat&labelColor=37474&logo=firebase&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-%23546e7a?style=flat&labelColor=37474&logo=kotlin&logoColor=white) ![Native Android Development](https://img.shields.io/badge/Native%20Android%20Development-%23546e7a?style=flat&labelColor=37474&logo=androidstudio&logoColor=white) ![Java](https://img.shields.io/badge/Java-%23546e7a?style=flat&labelColor=37474&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-%23546e7a?style=flat&labelColor=37474&logo=spring&logoColor=white) ![Apache](https://img.shields.io/badge/Apache-%23546e7a?style=flat&labelColor=37474&logo=apache&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%23546e7a?style=flat&labelColor=37474&logo=tailwindcss&logoColor=white) ![Vue](https://img.shields.io/badge/Vue-%23546e7a?style=flat&labelColor=37474&logo=vuedotjs&logoColor=white) ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-%23546e7a?style=flat&labelColor=37474&logo=nuxtdotjs&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-%23546e7a?style=flat&labelColor=37474&logo=sqlite&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-%23546e7a?style=flat&labelColor=37474&logo=firebase&logoColor=white)
 
 **Technologies i'm interested in learning in the future:**
 
@@ -27,4 +27,4 @@ A passionate amateur software engineer. Usually programs in C#, JavaScript and T
 | [beringtoyou.com](https://beringtoyou.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Sat, 13 Nov 2021 17:40:39 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Sat, 13 Nov 2021 17:43:02 GMT</p>*

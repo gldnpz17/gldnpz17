@@ -88,6 +88,14 @@ const technologies = {
       iconId: 'androidstudio'
     },
     {
+      label: 'Java',
+      iconId: 'java'
+    },
+    {
+      label: 'Spring',
+      iconId: 'spring'
+    },
+    {
       label: 'Apache',
       iconId: 'apache'
     },

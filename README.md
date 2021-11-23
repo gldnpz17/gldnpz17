@@ -23,8 +23,8 @@ A passionate amateur software engineer. Usually programs in C#, JavaScript and T
 | [url shortener](https://short.gldnpz.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
 | [gimana.id](https://gimana.id) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte. taken down due to low server resource.` |
 | [ga-bot](https://gabot.gldnpz.com/status) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
-| [regex-catalog](https://regex.gldnpz.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/regex-catalog) | `no notes` |
+| [regex-catalog](https://regex.gldnpz.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/regex-catalog) | `no notes` |
 | [beringtoyou.com](https://beringtoyou.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Tue, 23 Nov 2021 13:01:45 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Tue, 23 Nov 2021 13:40:56 GMT</p>*

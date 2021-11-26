@@ -20,11 +20,11 @@ A passionate amateur software engineer. Usually programs in C#, JavaScript and T
 | Project name | Status | Repository | Notes |
 | --- | --- | --- | --- |
 | [personal website](https://gldnpz.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/gldnpz.com) | `it looks ugly. reconstruction work in progress.` |
-| [url shortener](https://short.gldnpz.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
+| [url shortener](https://short.gldnpz.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/url-shortener) | `no notes` |
 | [gimana.id](https://gimana.id) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte. taken down due to low server resource.` |
-| [ga-bot](https://gabot.gldnpz.com/status) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
+| [ga-bot](https://gabot.gldnpz.com/status) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
 | [regex-catalog](https://regex.gldnpz.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/regex-catalog) | `no notes` |
 | [beringtoyou.com](https://beringtoyou.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Fri, 26 Nov 2021 05:37:40 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Fri, 26 Nov 2021 06:23:03 GMT</p>*

@@ -24,7 +24,7 @@ A passionate amateur software engineer. Usually programs in C#, JavaScript and T
 | [gimana.id](https://gimana.id) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/gimana.id) | `made in collaboration with comfyte. taken down due to low server resource.` |
 | [ga-bot](https://gabot.gldnpz.com/status) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | [here](https://github.com/gldnpz17/ga-bot) | `no notes` |
 | [regex-catalog](https://regex.gldnpz.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/regex-catalog) | `no notes` |
-| [beringtoyou.com](https://beringtoyou.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
+| [beringtoyou.com](https://beringtoyou.com) | ![onlineBadge](https://img.shields.io/badge/200-online-%234caf50) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Fri, 17 Jun 2022 14:40:37 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Fri, 17 Jun 2022 15:21:12 GMT</p>*

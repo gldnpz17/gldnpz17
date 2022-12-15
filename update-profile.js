@@ -5,9 +5,8 @@ console.log('README.md update started.');
 
 const summary = 
 'A passionate amateur software engineer. ' + 
-'Usually programs in C#, JavaScript and TypeScript. ' +
-'Lives by the principle that every project is an opportunity to learn a new piece of technology. ' + 
-'Recently started learning native android development using Kotlin and backend development with Spring using Java.'
+'Most of the time uses JavaScript and TypeScript. ' +
+'Lives by the principle that every project is an opportunity to learn a new piece of technology. '
 
 const technologies = {
   workedWith: {
@@ -23,6 +22,14 @@ const technologies = {
       {
         label: 'TypeScript',
         iconId: 'typescript'
+      },
+      {
+        label: 'Kotlin',
+        iconId: 'kotlin'
+      },
+      {
+        label: 'Micropython',
+        iconId: 'micropython'
       }
     ],
     frameworks: [
@@ -33,6 +40,10 @@ const technologies = {
       {
         label: 'Express',
         iconId: 'express'
+      },
+      {
+        label: 'Next.js',
+        iconId: 'nextdotjs'
       },
       {
         label: 'React',
@@ -53,6 +64,10 @@ const technologies = {
       {
         label: 'MaterialUI',
         iconId: 'materialui'
+      },
+      {
+        label: 'TailwindCSS',
+        iconId: 'tailwindcss'
       },
     ],
     tools: [
@@ -76,16 +91,28 @@ const technologies = {
         label: 'PostgreSQL',
         iconId: 'postgresql'
       },
+      {
+        label: 'SQLite',
+        iconId: 'sqlite'
+      },
+      {
+        label: 'Firebase',
+        iconId: 'firebase'
+      },
+      {
+        label: 'Strapi',
+        iconId: 'strapi'
+      },
+      {
+        label: 'Contentful',
+        iconId: 'contentful'
+      },
     ]
   },
   learning: [
     {
-      label: 'Kotlin',
-      iconId: 'kotlin'
-    },
-    {
-      label: 'Native Android Development',
-      iconId: 'androidstudio'
+      label: 'Flutter',
+      iconId: 'flutter'
     },
     {
       label: 'Java',
@@ -100,8 +127,8 @@ const technologies = {
       iconId: 'apache'
     },
     {
-      label: 'TailwindCSS',
-      iconId: 'tailwindcss'
+      label: 'Nginx',
+      iconId: 'nginx'
     },
     {
       label: 'Vue',
@@ -110,14 +137,6 @@ const technologies = {
     {
       label: 'Nuxt.js',
       iconId: 'nuxtdotjs'
-    },
-    {
-      label: 'SQLite',
-      iconId: 'sqlite'
-    },
-    {
-      label: 'Firebase',
-      iconId: 'firebase'
     },
   ],
   interested: [

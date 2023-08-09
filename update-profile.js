@@ -352,6 +352,7 @@ const main = async () => {
   technologyWriter.listTechnologies(technologies.interested) +
   `\n\n` +
   `### 🛠 Projects\n` +
+  `Note: All projects are currently down in anticipation of the expiry of the Microsoft Azure for students plan\n` +
   `${projectStrings.tableString}\n` +
   `---\n` +
   `*<p align="center">${projectStrings.statusString}</p>*`;

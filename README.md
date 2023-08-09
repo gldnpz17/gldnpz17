@@ -17,6 +17,7 @@ A passionate amateur software engineer. Most of the time uses JavaScript and Typ
 ![Redux](https://img.shields.io/badge/Redux-%23546e7a?style=flat&labelColor=37474&logo=redux&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-%23546e7a?style=flat&labelColor=37474&logo=nextdotjs&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-%23546e7a?style=flat&labelColor=37474&logo=kubernetes&logoColor=white) ![Jest](https://img.shields.io/badge/Jest-%23546e7a?style=flat&labelColor=37474&logo=jest&logoColor=white) ![Electron](https://img.shields.io/badge/Electron-%23546e7a?style=flat&labelColor=37474&logo=electron&logoColor=white) ![JUnit](https://img.shields.io/badge/JUnit-%23546e7a?style=flat&labelColor=37474&logo=junit5&logoColor=white)
 
 ### 🛠 Projects
+Note: All projects are currently down in anticipation of the expiry of the Microsoft Azure for students plan
 | Project name | Status | Repository | Notes |
 | --- | --- | --- | --- |
 | [personal website](https://gldnpz.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | [here](https://github.com/gldnpz17/gldnpz.com) | `it looks ugly. reconstruction work in progress.` |
@@ -27,4 +28,4 @@ A passionate amateur software engineer. Most of the time uses JavaScript and Typ
 | [beringtoyou.com](https://beringtoyou.com) | ![offlineBadge](https://img.shields.io/badge/%3F-failure-e53935) | `private repository` | `PKM(Program Kreativitas Mahasiswa) project` |
 
 ---
-*<p align="center">project statuses were last updated automatically on Wed, 09 Aug 2023 04:39:20 GMT</p>*
+*<p align="center">project statuses were last updated automatically on Wed, 09 Aug 2023 04:47:37 GMT</p>*
